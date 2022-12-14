@@ -18,7 +18,7 @@ class Hangman(object):
     def __init__(self):
         self.guessed_letters = [] # a list that stores guessed letters (well well)
         self.incorrect_guesses = [] # a list that stores incorrect guessed letter
-        self.train_dictionary = build_dictionary("words_250000_train.txt")
+        self.train_dictionary = build_dictionary("train.txt")
         self.letters = sorted(set("".join(self.train_dictionary)))
         self.n = len(self.letters)
         self.weights = [0]*self.n
